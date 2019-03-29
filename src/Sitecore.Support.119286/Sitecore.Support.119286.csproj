@@ -42,8 +42,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlAgilityPack">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\sc827_UnBrokenLinks\Website\bin\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.HtmlAgilityPack.8.2.7\lib\HtmlAgilityPack.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.8.2.7\lib\Sitecore.Kernel.dll</HintPath>
@@ -58,9 +59,6 @@
   <ItemGroup>
     <Compile Include="Data\Fields\HtmlField.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.119286.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
